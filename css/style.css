@@ -211,3 +211,83 @@ footer a {
   min-height: 100vh;
   background-position: center;
 }
+/* manga */
+.overlay-manga {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover4.jpg);
+  z-index: -1;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  position: fixed;
+}
+.manga-text,
+.manga-descrption {
+  color: #fff;
+}
+.manga-text a {
+  margin-top: 80px;
+}
+.manga-main .row {
+  margin-bottom: 100px;
+}
+/* TV */
+.overlay-tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover6.jpg);
+  z-index: -1;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  position: fixed;
+}
+/* anime */
+.overlay-anime {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover7.png);
+  z-index: -1;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  position: fixed;
+}
+/* Movies */
+.overlay-movie {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover8.jpg);
+  z-index: -1;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  position: fixed;
+}
+/* Novel */
+.overlay-novel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover9.jpg);
+  z-index: -1;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  position: fixed;
+}
