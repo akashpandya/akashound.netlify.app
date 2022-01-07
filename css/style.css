@@ -199,6 +199,7 @@ footer a {
 .aboutImg img {
   border-radius: 20px;
 }
+/* abour */
 .overlay-about {
   position: absolute;
   top: 0;
@@ -210,6 +211,7 @@ footer a {
   background-size: cover;
   min-height: 100vh;
   background-position: center;
+  position: fixed;
 }
 /* manga */
 .overlay-manga {
