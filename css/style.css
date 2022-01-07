@@ -291,3 +291,34 @@ footer a {
   background-position: center;
   position: fixed;
 }
+.title-manga,
+.about-main {
+  margin-top: 30px;
+}
+#status,
+.success {
+  background-color: aquamarine;
+  color: black;
+  animation: status1 4s ease forwards;
+}
+
+#status,
+.error {
+  background-color: orangered;
+  color: #fff;
+  animation: status1 4s ease forwards;
+}
+@keyframes status1 {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
