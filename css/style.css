@@ -147,6 +147,18 @@ section {
 .upcoming-section {
   background-image: url(../images/cover2.jpg);
 }
+.vidBG {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .feature i {
   background: linear-gradient(#00e0fe, #1107fe);
   -webkit-background-clip: text;
