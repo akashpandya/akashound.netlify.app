@@ -47,7 +47,9 @@ section {
   background-size: cover;
   background-attachment: fixed;
 }
-
+.strong {
+  font-weight: 500;
+}
 .hero-section {
   min-height: 100vh;
   display: flex;
