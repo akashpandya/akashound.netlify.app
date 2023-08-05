@@ -1,10 +1,1 @@
-- 👋 Hi, I’m @akashpandya
-- 👀 I’m interested in ...getting employed as a front end developer
-- 🌱 I’m currently learning ...React JS
-
-- 📫 How to reach me ...akash1pandya@gmail.com
-
-<!---
-akashpandya/akashpandya is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Hey, This is a website created to help my dad reach more people with his DJ business. The business is named after me; Akash Sound and I am proud to help in anyway I can to help him succeed. Please check out the website and use the form to contact for your business needs!
