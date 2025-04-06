@@ -60,3 +60,13 @@ If deployed, include the link here
 1. Clone the repo:
    ```bash
    git clone https://github.com/akashpandya/akashsound
+---
+
+👤 Author  
+**Akash Pandya**  
+Frontend Dev turned Data Analyst | HTML, CSS, JavaScript, SQL, Tableau  
+🌐 [Portfolio Website](https://aakashpandya.netlify.app)  
+📊 [GitHub](https://github.com/akashpandya)  
+💼 [LinkedIn](https://linkedin.com/in/akash-pandya100/)
+
+   
