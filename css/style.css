@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-/* globals */
+/* GLOBALS */
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.8;
+  overflow-x: hidden;
 }
+
 h1,
 h2,
 h3,
@@ -16,45 +19,47 @@ h5,
 h6 {
   font-weight: 900 !important;
 }
+
 a {
   text-decoration: none;
   transition: all 0.3s ease;
-  font-weight: 800;
+  font-weight: 600;
 }
+
 section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  z-index: 2;
+  padding: 80px 0;
   position: relative;
 }
+
 .row img {
   width: 100%;
+  border-radius: 6px;
 }
-/* nav */
+
+/* NAVBAR */
 .navbar {
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
-  background: linear-gradient(to left, #00e0fe, #1107fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #1107fe;
+  font-weight: 700;
 }
-/* Hero */
+
+/* HERO */
 .hero {
-  background: url('../images/garba-crowd-gta.jpg') center/cover no-repeat;
   height: 100vh;
+  background: url('../images/garba-crowd-gta.jpg') center/cover no-repeat;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .hero::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
 }
 
 .hero .container {
@@ -62,276 +67,124 @@ section {
   z-index: 2;
 }
 
-/* Button */
+/* BUTTON */
 .btn {
-  padding: 14px 22px;
-  transition: all 0.4s ease;
+  padding: 14px 24px;
+  transition: all 0.3s ease;
 }
+
 .btn-main {
-  background: linear-gradient(to left, #000000, #1107fe);
-  border-radius: 100px;
+  background: linear-gradient(to right, #1a1a1a, #333);
+  border-radius: 50px;
   border: none;
+  color: #fff;
   font-weight: 600;
-  color: #fff;
 }
+
 .btn:hover {
+  transform: translateY(-3px);
   color: #fff;
-  transform: translateY(-5px);
 }
 
-.video-btn {
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(to left, #00e0fe, #1107fe);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  border-radius: 100px;
-}
-.video-btn img {
-  width: linear-gradient(to left, #00e0fe, #1107fe);
-}
-.video-btn:hover {
-  background: #fff;
-  color: #fff;
-}
-/* Intro */
-.section-intro {
-  margin-bottom: 40px;
-  text-align: center;
-}
-/* about */
-.section-about {
-  margin-bottom: 40px;
-}
-
-/* current */
+/* SECTION TITLES */
+.section-intro,
+.section-about,
 .section-current {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .divider {
   height: 4px;
-  width: 160px;
-  background: linear-gradient(to right, #00e0fe, #1107fe);
-  margin: 16px auto;
+  width: 140px;
+  background: #1107fe;
+  margin: 15px auto;
 }
-/* Watchlist */
-.watchlist .watchlist-img {
-  position: relative;
+
+/* SERVICES / CARDS */
+.watchlist {
+  text-align: center;
 }
-.watchlist .watchlist-img .icon {
-  width: 90px;
-  height: 90px;
-  background: linear-gradient(to right, #00e0fe, #1107fe);
-  color: #fff;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: -45px;
-  left: 50px;
-  transform: translateX(120%);
+
+.watchlist img {
+  border-radius: 10px;
 }
-.watchlist .watchlist-img .icon i {
-  font-size: 36px;
+
+.watchlist h5 {
+  margin-top: 20px;
+  font-weight: 700;
 }
-/* Upcoming */
-.upcoming-section {
-  background-image: url(../images/cover2.jpg);
+
+.watchlist p {
+  font-size: 14px;
+  color: #555;
 }
+
+/* VIDEO SECTION */
 .vidBG {
   position: relative;
-  display: block;
   width: 100%;
   padding-bottom: 56.25%;
 }
+
 .vid {
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
 }
 
-.feature i {
-  background: linear-gradient(#00e0fe, #1107fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 54px;
-}
-/* contact-us */
+/* CONTACT SECTION */
 .contact-us {
+  background: #1f1f1f;
   color: #fff;
-  background-image: url(../images/cover3.jpg);
 }
+
 form .form-control {
-  border-radius: 0;
-  background-color: transparent;
-  border-color: rgb(255, 255, 255, 0.5);
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
 form .form-control:focus {
-  color: #fff;
-  background: transparent;
-  border-color: #fff;
-}
-form input .form-control {
-  height: 54px;
+  border-color: #1107fe;
+  box-shadow: none;
 }
 
 form .form-control::placeholder {
-  color: #fff;
+  color: #999;
 }
-.icons {
-  display: flex;
-  justify-content: end;
-}
-.icons img {
-  width: 100%;
-}
+
+/* FOOTER */
 footer {
-  background: linear-gradient(to right, #00e0fe, #1107fe);
+  background: #111;
   color: #fff;
 }
+
 footer a {
   color: #fff;
 }
-/* about us */
-.about-text {
-  color: #fff;
-  margin-top: 8%;
-}
-.aboutImg {
-  margin-top: 85px;
-}
-.aboutImg img {
-  border-radius: 20px;
-}
-/* about */
-.overlay-about {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover3.jpg);
-  z-index: -1;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  position: fixed;
-}
-/* manga */
-.overlay-manga {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover4.jpg);
-  z-index: -1;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  position: fixed;
-}
-.manga-text,
-.manga-descrption {
-  color: #fff;
-}
-.manga-text a {
-  margin-top: 80px;
-}
-.manga-main .row {
-  margin-bottom: 75px;
-}
-/* TV */
-.overlay-tv {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover6.jpg);
-  z-index: -1;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  position: fixed;
-}
-/* anime */
-.overlay-anime {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover7.jpg);
-  z-index: -1;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  position: fixed;
-}
-/* Movies */
-.overlay-movie {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover8.jpg);
-  z-index: -1;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  position: fixed;
-}
-/* Novel */
-.overlay-novel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/cover9.jpg);
-  z-index: -1;
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  position: fixed;
-}
-.title-manga {
-  margin-top: 100px;
-}
-.about-main {
-  margin-top: 30px;
-}
-#status,
-.success {
-  background-color: aquamarine;
-  color: black;
-  animation: status1 4s ease forwards;
+
+/* ICONS */
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
-#status,
-.error {
-  background-color: orangered;
-  color: #fff;
-  animation: status1 4s ease forwards;
+.icons img {
+  width: 24px;
 }
-@keyframes status1 {
-  0% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  90% {
-    opacity: 1;
-    pointer-events: all;
-  }
-  100% {
-    opacity: 0;
-    pointer-events: none;
-  }
+
+/* STATUS MESSAGE */
+#status.success {
+  background: #4caf50;
+  color: #fff;
+  padding: 10px;
+}
+
+#status.error {
+  background: #f44336;
+  color: #fff;
+  padding: 10px;
 }
